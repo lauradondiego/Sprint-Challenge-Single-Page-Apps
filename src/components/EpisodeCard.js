@@ -5,18 +5,11 @@ const src = "../Img/cardImg.jpg";
 
 export const CardExampleCard = ({ char }) => (
   <Card>
-    <Image src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" style={{ width: "100px" }} />{" "}
     <div className="name">
-      <h2>Name: {char.name}</h2>
+      <h2>Title: {char.name}</h2>
     </div>
     <div className="Status">
-      <p>Status: {char.status}</p>
-    </div>
-    <div className="location">
-      <p>Location: {char.location.name}</p>
-    </div>
-    <div className="origin">
-      <p>Origin: {char.origin.name}</p>
+      <p>Air Date: {char.air_date}</p>
     </div>
   </Card>
 );
