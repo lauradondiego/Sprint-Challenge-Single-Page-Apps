@@ -5,7 +5,11 @@ const src = "../Img/cardImg.jpg";
 
 export const CardExampleCard = ({ char }) => (
   <Card>
-    <Image src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" style={{ width: "100px" }} />{" "}
+    <Image
+      // src="https://rickandmortyapi.com/api/character/{avatar/1}.jpeg"
+      src={char.image}
+      style={{ width: "100px" }}
+    />{" "}
     <div className="name">
       <h2>Name: {char.name}</h2>
     </div>
